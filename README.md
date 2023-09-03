@@ -61,3 +61,5 @@ if ($user->getLanguage() != " en ") {
 •	Si vous ne l'avez pas déjà fait, réglez votre langue sur « francais » et cliquez sur le ? dans le bandeau du haut.
 ILIAS ouvrira le menu d’aide.
 
+Contact : vince.syh@free.fr
+
