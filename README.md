@@ -23,40 +23,41 @@ Si votre langue principale est le français, que vous souhaitez avoir l'aide en 
 ÉTAPE 1
 
 •	Télécharger le package 1685555255__6127__lm_190.zip
-•	NE renommez AUCUN des fichiers du package !
-•	NE renommez PAS le fichier .zip de 
-•	Dans votre installation ILIAS, ouvrez « Administration » > « Aide en ligne ».
-•	Téléchargez votre package .zip traduit. Le téléchargement peut prendre plusieurs minutes.
-•	Cliquez sur Activer à droite du titre de l'aide.
+•	NE renommez AUCUN des fichiers du package
+•	NE renommez PAS le fichier .zip
+•	Dans votre installation ILIAS, ouvrez « Administration » > « Aide en ligne »
+•	Téléchargez votre package .zip traduit. Le téléchargement peut prendre plusieurs minutes
+•	Cliquez sur Activer à droite du titre de l'aide
 
 ÉTAPE 2
 Modifiez la langue du système d'aide de « de » à « fr » dans les quatre fichiers suivants :
 
 •	Dans Services/Help/classes/class.ilHelp.php
-, remplacez
+remplacez
 if ($ilUser->getLanguage() != " de ") {
 par
 if ($ilUser->getLanguage() != " en ") {
 
 •	Dans Services/Help/classes/class.ilHelpGUI.php
-, remplacez
+remplacez
 if ((OH_REF_ID > 0 || $module_id > 0) && $ilUser->getLanguage() == " de ") {
 par
 if ((OH_REF_ID > 0 || $module_id > 0) && $ilUser->getLanguage() == " fr ") {
 
-
 •	Dans Services/Help/classes/class.ilHelpMapping.php
-, remplacez
+remplacez
 if ($ilUser->getLanguage() != " de ") {
 par
 if ($ilUser->getLanguage() != " en ") {
 
 •	Dans Services/Help/GlobalScreen/classes/trait.ilHelpDisplayed.php
-, remplacez
+remplacez
 if ($user->getLanguage() != " de ") {
 par
 if ($user->getLanguage() != " en ") {
+
 ÉTAPE 3
+
 •	Si vous ne l'avez pas déjà fait, réglez votre langue sur « francais » et cliquez sur le ? dans le bandeau du haut.
 ILIAS ouvrira le menu d’aide.
 
